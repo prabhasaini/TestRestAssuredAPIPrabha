@@ -7,7 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>TestRestAssuredMVNProject</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -23,12 +23,6 @@
         </dependency>
 
         <!-- TestNG -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.11.0</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
