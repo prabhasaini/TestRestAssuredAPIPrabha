@@ -20,11 +20,19 @@ pipeline {
         }
     }
 
-    post {
-        always {
+    //post {
+        //always {
 
            // junit 'target/surefire-reports/*.xml'
-            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+          //  junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+
+            post {
+                always {
+                    bat 'dir target\\surefire-reports'
+                    junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+                }
+            }
+
 
         }
     }
