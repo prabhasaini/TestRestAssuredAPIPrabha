@@ -24,7 +24,10 @@ pipeline {
         always {
 
            // junit 'target/surefire-reports/*.xml'
-            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+            //junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+            testng testResultsPattern: '**/target/surefire-reports/testng-results.xml',
+                    allowEmptyResults: true
+
 
         }
     }
