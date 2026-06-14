@@ -2,12 +2,14 @@
 
 <suite name="RestAssuredSuite">
 
+    <listeners>
+        <listener  class-name="Listener.ExtentReportListener"> </listener>
+    </listeners>
+
     <test name="APITests">
 
         <classes>
             <class name="TestsPkg.UserTest"/>
         </classes>
-
     </test>
-
 </suite>

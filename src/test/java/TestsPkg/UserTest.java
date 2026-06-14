@@ -82,6 +82,7 @@ public class UserTest extends BaseFileClass {
         pload.setEmail("prbha.saini@gmail.com");
         pload.setPassword("12345");
         //pload.setCategory("men's clothing");
+        System.out.println("Testing");
         Response response = given()
                 .contentType(ContentType.JSON)
                 .body(pload)
