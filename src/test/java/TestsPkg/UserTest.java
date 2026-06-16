@@ -35,7 +35,7 @@ public class UserTest extends BaseFileClass {
 
     }
 
-    //@Test
+    @Test
     public void GetProductList() {
         Response response = given()
                 .when()
@@ -43,6 +43,7 @@ public class UserTest extends BaseFileClass {
         response.then().log().all();
         assertEquals(response.getStatusCode(), 201);
     }
+
 
    // @Test
     public void UpdateUserAccount() {
