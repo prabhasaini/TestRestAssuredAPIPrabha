@@ -31,7 +31,7 @@ public class UserTest extends BaseFileClass {
                 .post(EndPointsClass.createUser);
         response.then().log().all();
         assertEquals(response.getStatusCode(), 201);
-        System.out.println("test");
+        System.out.println("test1");
 
     }
 
