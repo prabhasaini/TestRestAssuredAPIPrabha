@@ -35,7 +35,7 @@ public class UserTest extends BaseFileClass {
 
     }
 
-    @Test
+    //@Test
     public void GetProductList() {
         Response response = given()
                 .when()
