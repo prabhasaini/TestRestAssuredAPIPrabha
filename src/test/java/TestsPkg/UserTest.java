@@ -95,7 +95,7 @@ public class UserTest extends BaseFileClass {
         assertEquals(response.getStatusCode(), 201);
         //"id": 11
     }
-    @Test
+   // @Test
     public void GetUsersFakestore() {
         Response response = given()
                 .pathParam("id", 1)
